@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ý nghĩa các thẻ</title>
+</head>
+<body>
+    <h1>HTML BASIC</h1>
+    <p>Thẻ HTML BASIC là thẻ cấu trúc cơ bản nhất để tạo trang web. Nó bao gồm các thẻ chính như html, head, title, và body.
+       Trong thẻ body gồm các thẻ p, a, img </p>
+    <p>Ví dụ minh họa</p>
+    <!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang Web Cơ Bản</title>
+</head>
+<body>
+    <h1>Chào mừng đến với trang web của tôi</h1>
+    
+    <p>Đây là một đoạn văn bản sử dụng thẻ &lt;p&gt;.</p>
+
+    <p>Đây là một liên kết: <a href="https://www.example.com">Nhấp vào đây</a> để truy cập trang web.</p>
+
+    <p>Dưới đây là một hình ảnh minh họa:</p>
+    <img src="https://via.placeholder.com/150" alt="Hình ảnh minh họa">
+
+</body>
+</html>
+
+
+    <h1>HTML ELEMENTS</h1>
+    <p>Một phần tử HTML được xác định bởi một thẻ bắt đầu, một số nội dung và một thẻ kết thúc.</p>
+    <h2>Các phần tử HTML cơ bản</h2>
+    <p>Phần tử HTML bao gồm mọi thứ từ thẻ bắt đầu đến thẻ kết thúc:
+        tagname Nội dung ở đây ... tagname </p>
+    <p>Ví dụ minh họa</p>
+    <h1>My First Heading</h1>
+    <p>My first paragraph.</p>
+    <h2>Các phần tử HTML lồng nhau</h2>
+    <p>Các phần tử HTML có thể được lồng vào nhau (các phần tử này có thể chứa các phần tử khác).</p>
+    <p>Ví dụ minh họa</p>
+    <!DOCTYPE html>
+<html>
+<body>
+
+<h1>My First Heading</h1>
+<p>My first paragraph.</p>
+
+</body>
+</html>
+    <h2>Các phần tử HTML rỗng</h2>
+    <p>Các phần tử HTML không có nội dung được gọi là phần tử rỗng</p>
+    <p>Một số phần tử HTML vẫn sẽ hiển thị chính xác, ngay cả khi bạn quên thẻ kết thúc. Tuy nhiên, đừng bao giờ dựa vào điều này! Vì có thể xảy ra kết quả và lỗi không mong muốn nếu bạn quên thẻ kết thúc!</p>
+    <p>HTML không phân biệt chữ hoa chữ thường: P có nghĩa giống như p. Tuy nhiên W3C khuyến nghị sử dụng chữ thường trong HTML và yêu cầu sử dụng chữ thường cho các loại tài liệu nghiêm ngặt hơn như XHTML.</p>
+    
+    
+    <h1>HTML ATTRINUTES</h1>
+    <p>Thuộc tính HTML cung cấp thông tin bổ sung về các thành phần HTML.</p>
+    <h2>Thuộc tính Href</h2>
+    <p>Thẻ a định nghĩa một siêu liên kết. Thuộc tính href chỉ định URL của trang mà liên kết dẫn đến.</p>
+    <p>Ví dụ minh họa</p>
+    <a href="https://www.w3schools.com">Visit W3Schools</a>
+    <h2>Thuộc tính Src</h2>
+    <p>Thẻ img được sử dụng để nhúng hình ảnh vào trang HTML. Thuộc tính src chỉ định đường dẫn đến hình ảnh sẽ được hiển thị.</p>
+    <p>Có hai cách để chỉ định URL trong thuộc tính src:
+        <p>1.URL tuyệt đối: Liên kết đến hình ảnh bên ngoài, bao gồm tên miền đầy đủ (ví dụ: `src="https://www.w3schools.com/images/img_girl.jpg"`). Tuy nhiên, hình ảnh bên ngoài có thể có bản quyền và có thể bị xóa hoặc thay đổi bất ngờ.</p>
+        <p>2.URL tương đối: Liên kết đến hình ảnh được lưu trữ trong cùng trang web. Không bao gồm tên miền:</p>
+        <p>- `src="img_girl.jpg"`: Tương đối với trang hiện tại.</p>
+        <p>- `src="/images/img_girl.jpg"`: Tương đối với tên miền.</p>
+        <p>*Mẹo: Nên sử dụng URL tương đối để tránh lỗi khi thay đổi tên miền.</p>
+    <p>Ví dụ minh họa</p>
+    <img src="img_girl.jpg">
+    <h2>Thuộc tính Chiều rộng và Chiều cao</h2>
+    <p>Thẻ img cũng phải chứa các thuộc tính width và height để chỉ định chiều rộng và chiều cao của hình ảnh (tính bằng pixel)</p>
+    <p>Ví dụ minh họa</p>
+    <img src="img_girl.jpg" width="500" height="600">
+    <h2>Thuộc tính Alt</h2>
+    <p>Thuộc tính alt trong thẻ img cung cấp văn bản thay thế khi hình ảnh không hiển thị do lỗi kết nối, sai URL hoặc khi người dùng sử dụng trình đọc màn hình.</p>
+    <p>Ví dụ minh họa</p>
+    <img src="img_girl.jpg" alt="Girl with a jacket">
+    <h2>Thuộc tính Style</h2>
+    <p>Thuộc tính Style được sử dụng để thêm kiểu cho một phần tử, chẳng hạn như màu sắc, phông chữ, kích thước, v.v.</p>
+    <p>Ví dụ minh họa</p>
+    <p style="color:red;">This is a red paragraph.</p>
+    <h2>Thuộc tính Lang</h2>
+    <p>Thuộc tính Lang của html là thẻ khai báo ngôn ngữ của trang Web</p>
+    <p>Ví dụ minh họa</p>
+    <!DOCTYPE html>
+<html lang="en">
+<body>
+...
+</body>
+</html>
+    <h2>Thuộc tính Title</h2>
+    <p>Thuộc tính Title xác định một số thông tin bổ sung về một phần tử</p>
+    <p>Ví dụ minh họa</p>
+    <p title="I'm a tooltip">This is a paragraph.</p>
+
+    <h1>HTML HEADING</h1>
+    <p>Tiêu đề HTML là tiêu đề hoặc phụ đề mà bạn muốn hiển thị trên trang web từ h1 đến h6.</p>
+    <p>Thẻ h1 đại diện cho tiêu đề quan trọng nhất, trong khi thẻ h6 là ít quan trọng nhất. Việc sử dụng đúng thứ tự các thẻ tiêu đề giúp cải thiện cấu trúc tài liệu và hỗ trợ các công cụ tìm kiếm trong việc lập chỉ mục nội dung trang.</p>
+    <p>Ví dụ minh họa</p>
+    <h1>Heading 1</h1>
+    <h2>Heading 2</h2>
+    <h3>Heading 3</h3>
+    <h4>Heading 4</h4>
+    <h5>Heading 5</h5>
+    <h6>Heading 6</h6>
+
+
+    <h1>HTML PARAGRAPHS</h1>
+    <p>Một đoạn văn luôn bắt đầu ở một dòng mới và thường là một khối văn bản.</p>
+    <h2>Thẻ p</h2>
+    <p>Dùng để tạo đoạn văn bản, trình duyệt tự động thêm khoảng cách trước và sau đoạn.</p>
+    <h2>Hiển thị HTML</h2>
+    <p>Trình duyệt bỏ qua khoảng trắng và xuống dòng trong mã nguồn.</p>
+    <p>Số dòng hiển thị phụ thuộc vào kích thước cửa sổ trình duyệt.</p>
+    <h2>Quy tắc ngang</h2>
+    <p>Thẻ hr xác định một ngắt chủ đề trong trang HTML(hr là thẻ rỗng) và thường được hiển thị dưới dạng một quy tắc ngang.</p>
+    <p>Phần tử hr được sử dụng để phân tách nội dung (hoặc xác định thay đổi) trong trang HTML</p>
+    <h2>Ngắt dòng HTML</h2>
+    <p>Dùng thẻ br để xuống dòng mà không bắt đầu đoạn mớl (br là thẻ rỗng)</p>
+<p>
+This paragraph
+contains a lot of lines
+in the source code,
+but the browser
+ignores it.
+</p>
+
+<p>
+This paragraph
+contains         a lot of spaces
+in the source         code,
+but the        browser
+ignores it.
+</p>
+    <h1>HTML STYLES</h1>
+    <h2>Sử dụng thuộc tính Styles để tạo kiểu cho các phần tử HTML như:</h2>
+    <p> Sử dụng background-colorcho màu nền<br>
+        Sử dụng colorcho màu chữ<br>
+        Sử dụng font-family cho phông chữ văn bản<br>
+        Sử dụng font-size cho kích thước văn bản<br>
+        Sử dụng text-align để căn chỉnh văn bản
+        </p>
+
+    <h1>HTML FORMATTING</h1>
+    <h2>Các thành phần định dạng được thiết kế để hiển thị các loại văn bản đặc biệt:</h2>
+    <p> Thẻ b: Văn bản in đậm<br>
+        Thẻ strong: Văn bản quan trọng<br>
+        Thẻ i: Văn bản in nghiêng<br>
+        Thẻ em: Văn bản được nhấn mạnh<br>
+        Thẻ mark: Văn bản được đánh dấu<br>
+        Thẻ small: Văn bản nhỏ hơn<br>
+        Thẻ del: Văn bản đã xóa<br>
+        Thẻ ins: Đã chèn văn bản<br>
+        Thẻ sub: Văn bản phụ đề dưới<br>
+        Thẻ sup: Văn bản chữ mũ<br>
+    </p>
+
+    <h1>HTML QUOTATION</h1>
+    <p> Thẻ blockquote: Dùng để trích dẫn một đoạn văn từ nguồn khác, thường được trình duyệt hiển thị với lề thụt vào.<br>
+        Thẻ q: Dùng để trích dẫn ngắn gọn trong dòng, thường tự động thêm dấu ngoặc kép xung quanh nội dung trích dẫn.<br>
+        Thẻ abbr: Định nghĩa một từ viết tắt hoặc chữ viết tắt, cung cấp thông tin mở rộng khi người dùng di chuột qua.<br>
+        Thẻ address: Cung cấp thông tin liên hệ cho tác giả hoặc chủ sở hữu của tài liệu, thường được hiển thị in nghiêng và có ngắt dòng trước và sau.<br> 
+        Thẻ cite: Định nghĩa tiêu đề của một tác phẩm như sách, bài thơ, bài hát, phim, tranh vẽ, v.v. Nội dung thường được hiển thị in nghiêng.<br>
+        Thẻ bdo: Được sử dụng để ghi đè hướng văn bản hiện tại, hữu ích khi cần hiển thị văn bản từ phải sang trái hoặc ngược lại.<br>
+    </p>
+
+    <h1>HTML COMMENTS</h1>
+    <p> Chú thích HTML không được hiển thị trên trình duyệt, nhưng chúng có thể giúp ghi lại tài liệu về mã nguồn HTML của bạn.</p>
+    <p> Chú thích được viết trong dấu !-- -- </p>
+    <P>Ví dụ minh họa</P>
+
+    <h1>HTML COLOR</h1>
+    <p>Màu HTML được chỉ định bằng tên màu được xác định trước hoặc bằng giá trị RGB, HEX, HSL, RGBA hoặc HSLA.</p>
+    <h2>Tên màu</h2>
+    <p>Trong HTML, màu có thể được chỉ định bằng cách sử dụng tên màu. HTML hỗ trợ 140 tên màu chuẩn</p>
+    <h2>Màu nền</h2>
+    <p>Ví dụ minh họa</p>
+    <h3 style="background-color:green;">Màu nền</h3>
+    <p style="background-color:red;">Màu nền</p>
+    <h2>Màu chữ</h2>
+    <p>Ví dụ minh họa</p>
+    <h3 style="color:Tomato;">Màu chữ</h3>
+    <p style="color:yellow;">Màu chữ</p>
+    <p style="color:MediumSeaGreen;">Màu chữ</p>
+    <h2>Màu viền</h2>
+    <p>Ví dụ minh họa</p>
+    <h3 style="border:2px solid yellowgreen;">Hello World</h3>
+    <h3 style="border:2px solid DodgerBlue;">Hello World</h3>
+    <h3 style="border:2px solid Violet;">Hello World</h3>
+    <h2>Giá trị màu sắc</h2>
+    <p>Trong HTML, màu sắc cũng có thể được chỉ định bằng cách sử dụng RGB, HEX, HSL, RGBA và HSLA.</p>
+
+    <h1>HTML CSS</h1>
+    <p>CSS là viết tắt của Cascading Style Sheets, dùng để kiểm soát bố cục của nhiều trang web cùng một lúc.</p>
+    <h2>Cách sử dụng CSS</h2>
+    <p>CSS có thể được thêm vào tài liệu HTML theo 3 cách:<br>
+        Nội tuyến: bằng cách sử dụng thuộc tính style bên trong các phần tử HTML <br>
+        Nội bộ: bằng cách sử dụng một thẻ style trong phần head <br>
+        Bên ngoài: bằng cách sử dụng một thẻ link để liên kết đến một tệp CSS bên ngoài</p>
+
+    <h2>Màu sắc, Phông chữ và Kích thước CSS</h2>
+    <p> Sử dụng thuộc tính CSS color cho màu văn bản<br>
+        Sử dụng thuộc tính CSS font-family cho phông chữ văn bản<br>
+        Sử dụng thuộc tính CSS font-size cho kích thước văn bản<br>
+        Sử dụng thuộc tính CSS border cho đường viền<br>
+        Sử dụng thuộc tính CSS padding cho khoảng cách bên trong đường viền<br>
+        Sử dụng thuộc tính CSS margin cho khoảng trống bên ngoài đường viền</p>
+
+
+    <h1>HTML LINKS</h1>
+    <p> Sử dụng thẻ a để xác định liên kết<br>
+        Sử dụng thẻ href để xác định địa chỉ liên kết<br>
+        Sử dụng thẻ target để xác định nơi mở tài liệu được liên kết<br>
+        Sử dụng thẻ img (bên trong thẻ a) để sử dụng hình ảnh làm liên kết<br>
+        Sử dụng thẻ mailto:lược đồ bên trong thẻ href để tạo liên kết mở chương trình email của người dùng</p>
+
+
+    <h1>HTML IMAGES</h1>
+    <p>Sử dụng thẻ img để xác định hình ảnh<br>
+        Sử dụng thuộc tính HTML src để xác định URL của hình ảnh<br>
+        Sử dụng thuộc tính HTML alt để xác định văn bản thay thế cho hình ảnh nếu không thể hiển thị<br>
+        Sử dụng các thuộc tính HTML width và height hoặc CSS width và height để xác định kích thước của hình ảnh<br>
+        Sử dụng thuộc tính CSS float để cho hình ảnh trôi sang trái hoặc sang phải</p>
+
+    <h1>HTML TABLES</h1>
+    <p>Bảng HTML cho phép các nhà phát triển web sắp xếp dữ liệu thành các hàng và cột.</p>
+    <h2>Định nghĩa</h2>
+    <p>Bảng được tạo bằng thẻ table, chứa các hàng (tr) và các ô dữ liệu (td). Các ô tiêu đề được xác định bằng thẻ th</p>
+    <p>Ví dụ minh họa</p>
+    <table>
+          <tr>
+            <th>Họ</th>
+            <th>Tên</th>
+            <th>Tuổi</th>
+          </tr>
+          <tr>
+            <td>Nguyễn</td>
+            <td>A</td>
+            <td>25</td>
+          </tr>
+          <tr>
+            <td>Trần</td>
+            <td>B</td>
+            <td>30</td>
+          </tr>
+        </table>
+    <p>Thuộc tính colspan và rowspan: Để một ô trải rộng qua nhiều cột hoặc hàng, sử dụng thuộc tính colspan hoặc rowspan.</h2>
+    <p>Kích thước bảng: Kích thước của bảng, cột hoặc hàng có thể được điều chỉnh bằng cách sử dụng thuộc tính style với các giá trị width và height</p>
+    <p>Thêm chú thích cho bảng: Sử dụng thẻ caption để thêm tiêu đề cho bảng, giúp mô tả nội dung của bảng một cách ngắn gọn. Thẻ caption nên được đặt ngay sau thẻ table</p>
+    <p>Sử dụng colgroup và col để định dạng cột: Thẻ colgroup chứa các thẻ col để xác định nhóm cột và áp dụng kiểu dáng cho chúng</p>
+    <p></p>
+
+    <h1>HTML LISTS</h1>
+    <p>Danh sách trong HTML giúp nhóm các mục dưới dạng có thứ tự hoặc không có thứ tự. Có ba loại chính:<br>
+
+        Danh sách có thứ tự ol: Các mục được đánh số.<br>
+        Danh sách không có thứ tự (ul): Các mục được liệt kê bằng dấu chấm.<br>
+        Danh sách mô tả (dl): Sử dụng cho các thuật ngữ và mô tả.</p><br>
+    <p>Ví dụ minh họa</p>
+    <ul>
+        <li>Táo</li>
+        <li>Cam</li>
+        <li>Chuối</li>
+      </ul>
+      <table>
+        <tr>
+          <td id="td1"></td>
+          <td><a href="index 1.html">Bài1</a></td>
+          <td><a href="index2_1.html" >Bài2_1</a></td>
+          <td><a href="index2_2.html" >Bài2_2</a></td>
+          <td><a href="index2_3.html" >Bài2_3</a></td>
+          <td><a href="index3.html">Bài3</a></td>
+          <td><a href="index4.html">Bài4</a></td>
+          <td><a href="index.html">Home</a></td>
+        </tr>
+      </table>
+</body>
+</html>
